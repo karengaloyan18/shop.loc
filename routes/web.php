@@ -22,7 +22,7 @@ Route::get('/categories',[Categorycontroller::class,'index'])->name('categories'
 
 
 Route::match(['get','post'],'/category-{code}',[Mobilecontroller::class,'index'])->name('category');
-Route::match(['get','post'],'/product{name}',[Productcontroller::class,'index'])->name('product');
+Route::match(['get','post'],'/product-{name}',[Productcontroller::class,'index'])->name('product');
 
 
 Route::post('/card',[Rediscontroller::class,'index'])->name('card');
