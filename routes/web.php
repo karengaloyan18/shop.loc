@@ -26,5 +26,5 @@ Route::match(['get','post'],'/product-{name}',[Productcontroller::class,'index']
 
 
 Route::post('/card',[Rediscontroller::class,'index'])->name('card');
-Route::get('/card',[Rediscontroller::class,'index2'])->name('card2');
+Route::get('/card',[Rediscontroller::class,'index'])->name('card');
 //Route::match(['get','post'],'/card2',[Rediscontroller::class,'index2'])->name('card2');

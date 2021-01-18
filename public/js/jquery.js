@@ -1,10 +1,14 @@
 $(document).ready(function () {
     $(".button").bind( "click", function() {
         let val = $(this).val();
+        let valtwo = $(this).attr('name')
+        alert(val)
         $.ajax({
             url: '/card',
             type: 'POST',
-            data: {val: val},
+            // headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+            data: {val: val,
+            valtwo: valtwo},
             context: $(this),
             dataType: 'json',
             success: function (data) {
