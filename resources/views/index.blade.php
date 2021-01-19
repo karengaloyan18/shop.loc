@@ -67,8 +67,6 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
                             <div class="labels">
-
-
                             </div>
                             <img src="{{asset('images') .'/'. $product->image}}" alt="iPhone X 64GB">
                             <div class="caption">
@@ -76,15 +74,13 @@
                                 <p>{{$product->price}} ₽</p>
                                     <input type="hidden" name="name" value="{{$product->name}}">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-                                    <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">В
-                                        корзину
-                                    </button>
+{{--                                    <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">В--}}
+{{--                                        корзину--}}
+{{--                                    </button>--}}
                                     @csrf
 
                                     <a href="{{route('product',['name'=>$product->name])}}"
                                        class="btn btn-default">Подробнее</a>
-                                {{--                                                      </form>--}}
-                                {{--                            <input type="hidden" name="_token" value="adj06plrzXmdR13dICCRLDfwwxGKJBDA1TkdkKOF">            </form>--}}
                             </div>
                         </div>
                     </div>
@@ -105,10 +101,6 @@
     </div>
 </div>
 <script src="{{asset('js/jquery.min.js')}}"></script>
-{{--<script src="public/js/bootstrap.min.js"></script>--}}
 <script src="{{asset('js/jquery.js')}}"></script>
-{{--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>--}}
-{{--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>--}}
-{{--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>--}}
 </body>
 </html>

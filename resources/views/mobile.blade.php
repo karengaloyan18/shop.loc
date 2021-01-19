@@ -29,17 +29,6 @@
                 <li class="active"><a href="{{route('categories')}}">Категории</a>
                 </li>
                 <li ><a href="http://internet-shop.tmweb.ru/basket">В корзину</a></li>
-                {{--                <li><a href="http://internet-shop.tmweb.ru/reset">Сбросить проект в начальное состояние</a></li>--}}
-                {{--                <li><a href="http://internet-shop.tmweb.ru/locale/en">en</a></li>--}}
-                {{----}}
-                {{--                <li class="dropdown">--}}
-                {{--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">₽<span class="caret"></span></a>--}}
-                {{--                    <ul class="dropdown-menu">--}}
-                {{--                        <li><a href="http://internet-shop.tmweb.ru/currency/RUB">₽</a></li>--}}
-                {{--                        <li><a href="http://internet-shop.tmweb.ru/currency/USD">$</a></li>--}}
-                {{--                        <li><a href="http://internet-shop.tmweb.ru/currency/EUR">€</a></li>--}}
-                {{--                    </ul>--}}
-                {{--                </li>--}}
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -73,9 +62,9 @@
                                 <p>{{$product->price}}₽</p>
                                 <p>
                                 <form action="http://internet-shop.tmweb.ru/basket/add/1" method="POST">
-                                    <button type="button" class="btn btn-default button" value="{{$product->name}}">В
-                                        корзину
-                                    </button>
+{{--                                    <button type="button" class="btn btn-default button" value="{{$product->name}}">В--}}
+{{--                                        корзину--}}
+{{--                                    </button>--}}
                                     <a href="{{route('product',['name'=>$product->name])}}"
                                        class="btn btn-default"
                                        role="button">Подробнее</a>
@@ -87,5 +76,9 @@
                 </div>
 @endif
 @endforeach
+    </div>
+    </div>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/jquery.js')}}"></script>
 </body>
 </html>

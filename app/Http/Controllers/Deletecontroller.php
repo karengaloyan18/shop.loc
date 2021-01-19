@@ -1,27 +1,27 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-class Rediscontroller extends Controller
+
+class Deletecontroller extends Controller
 {
-    public function index(Request $request)
-    {
-//        $res = json_encode($request->val);
+    //
+    public function index(Request $request){
         if ($request->isMethod('POST')) {
-            $res = $request->val;
-            echo $restwo = $request->valtwo;
-            $request->session()->put('product'.$res, $restwo);
-//            $request->session()->regenerateToken();
-        } else {
-//            dd($request->session()->token());
-            $request->session()->forget([/*'_token',*/ '_flash', '_previous']);
-            $data = $request->session()->all();
+//            dd($request->name);
+//            dd($request->session()->all());
+//            $request->session()->forget($request->name);
+//            echo $request->session()->all();
+            $request->session()->forget([$request->name,'_flash', '_previous']);
+            $dataw = $request->session()->all();
             $one = [];
-            foreach ($data as $date => $dat){
+            foreach ($dataw as $date => $dat){
 //                dd($dat);
 //                foreach ($dat as $da => $d){
-                    $one[] = $dat;
-                }
+                $one[] = $dat;
+            }
 
 //            }
 //            dd($one);
@@ -69,7 +69,14 @@ class Rediscontroller extends Controller
             }
 //            dd($total);
 //            $total = [];
-            return view('card2', ['first'=>$first,'second'=>$second,'total'=>$total]);
-        }
+
+//        }
+           echo view('card2', ['first'=>$first,'second'=>$second,'total'=>$total])->render();
+//            header("Location:user.php?uid=$uid");
+//            header('Location:http://shop.loc/card');
+//            return response()->json(array('success' => true, 'html'=>$returnHTML));
+
+//        return redirect()->route('card');
+    }
     }
 }

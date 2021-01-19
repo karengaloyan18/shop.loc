@@ -45,3 +45,9 @@ span.badge.badge-danger {
 div.filters {
     padding-bottom: 5px;
 }
+#total_price{
+    place-self: flex-start;
+    display: initial;
+    flex-grow: 2;
+    text-align: end;
+}

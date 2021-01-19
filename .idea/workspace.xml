@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27117e1d-3f82-40b5-b5f0-7a4e122c2d6f" name="Default Changelist" comment="Last commit">
-      <change afterPath="$PROJECT_DIR$/public/js/jqueryy.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="27117e1d-3f82-40b5-b5f0-7a4e122c2d6f" name="Default Changelist" comment="not last commit">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Deletecontroller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Rediscontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Rediscontroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/starter-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/starter-template.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/card2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/card2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdebug/tests/debugger/bug01532.inc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +200,7 @@
       <command value="php" />
       <command value="xdebug" />
       <command value=" Web Server Debug Validation" />
+      <command value="artisan make:controller Deletecontroller" />
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.Rediscontroller.php">
@@ -272,7 +272,10 @@
       <workItem from="1610833689299" duration="1197000" />
       <workItem from="1610896899769" duration="5110000" />
       <workItem from="1610903220291" duration="1752000" />
-      <workItem from="1610983344264" duration="18808000" />
+      <workItem from="1610983344264" duration="19192000" />
+      <workItem from="1611054161717" duration="11340000" />
+      <workItem from="1611068441145" duration="3313000" />
+      <workItem from="1611081666194" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608639864659</created>
@@ -295,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610294433271</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="not last commit">
+      <created>1611007218562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611007218567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,18 +360,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
     <MESSAGE value="Last commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Rediscontroller.php</url>
-          <line>55</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="not last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="not last commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
