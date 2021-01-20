@@ -13,6 +13,7 @@ class Rediscontroller extends Controller
             $request->session()->put('product'.$res, $restwo);
 //            $request->session()->regenerateToken();
         } else {
+//            dd($request->session()->all());
 //            dd($request->session()->token());
             $request->session()->forget([/*'_token',*/ '_flash', '_previous']);
             $data = $request->session()->all();
@@ -41,13 +42,17 @@ class Rediscontroller extends Controller
 //                dump($p);
                 foreach ($produ as $prod => $pro){
 //                    dump($pro->name);
-                    $first[$pro->name] = $pro->image;
+//                    $first['one']['prod'][$pro->id] = $pro->name;
 //                    dump($pro->price);
-                    $second[] = $pro->price;
+//                    $first['one']['image'][] = $pro->image;
+                    $first[$pro->id] = $pro->name;
+                    $second[$pro->id] = $pro->price;
 //                    dump($pro->id);
                 }
             }
 //            dd($first);
+//            dd($first['one']['prod']);
+//           $firstone = $first['prod'];
 //           $del =  array_merge($first,$second);
 //            dd($del);
 //            dd($first);
@@ -69,7 +74,7 @@ class Rediscontroller extends Controller
             }
 //            dd($total);
 //            $total = [];
-            return view('card2', ['first'=>$first,'second'=>$second,'total'=>$total]);
+            return view('card2', ['first'=>$first,'second'=>$second,'total'=>$total/*'firstone' => $firstone*/]);
         }
     }
 }

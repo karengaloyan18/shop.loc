@@ -29,4 +29,5 @@ Route::match(['get','post'],'/product-{name}',[Productcontroller::class,'index']
 Route::post('/card',[Rediscontroller::class,'index'])->name('card');
 Route::get('/card',[Rediscontroller::class,'index'])->name('card');
 Route::post('/del',[Deletecontroller::class,'index'])->name('del');
+//Route::get('/del',[Deletecontroller::class,'index'])->name('del');
 //Route::match(['get','post'],'/card2',[Rediscontroller::class,'index2'])->name('card2');
