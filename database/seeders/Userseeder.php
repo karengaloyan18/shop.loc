@@ -25,58 +25,80 @@ class Userseeder extends Seeder
                 'name' => 'Iphone 12 Pro Max',
                 'price' => '129990',
                 'description' => 'Its new Iphone 12',
-                'image' => 'iphone-12-pro-max.png',
-                'category_name' => 'mobile'
+                'image' => 'iphone-12-pro-max.jpg',
+                'category_name' => 'smartphones'
             ],
             [
                 'name' => 'Air Pods',
                 'price' => '16990',
                 'description' => 'AirPods deliver an unparalleled wireless headphone experience.',
                 'image' => 'MRXJ2.jpg',
-                'category_name' => 'portable'
+                'category_name' => 'wireless headphones'
             ],
             [
                 'name' => 'Iphone XR',
                 'price' => '49990',
                 'description' => 'The Apple iPhone XR is a smartphone that was tested with the iOS 12.0.1 OS',
                 'image' => 'iphone_x_silver.jpg',
-                'category_name' => 'mobile'
+                'category_name' => 'smartphones'
             ],
             [
                 'name' => 'Iphone XS',
                 'price' => '54990',
                 'description' => 'The 5.8-inch iPhone Xs feature stunning Super Retina displays.',
                 'image' => 'XS-10.jpg',
-                'category_name' => 'mobile'
-            ],
-            [
-                'name' => 'Panasonic LUMIX',
-                'price' => '40990',
-                'description' => 'For every kind of photographer, theres a Panasonic LUMIX camera to match.',
-                'image' => 'video_panasonic.jpg',
-                'category_name' => 'portable'
-            ],
-            [
-                'name' => 'Braun MQ535',
-                'price' => '10990',
-                'description' => 'Braun hand blender MQ535 White Sauce',
-                'image' => 'moulinex.jpg',
-                'category_name' => 'household'
+                'category_name' => 'smartphones'
             ],
             [
                 'name' => 'Iphone 11 Pro',
                 'price' => '90990',
                 'description' => ' iPhone 11 Pro based on iOS 13 and packs 64GB of inbuilt storage',
                 'image' => 'iphone11pro.jpg',
-                'category_name' => 'mobile'
+                'category_name' => 'smartphones'
             ],
             [
-                'name' => 'Nespresso Coffee',
-                'price' => '20990',
-                'description' => 'Espresso Machine Bundle with Aeroccino Milk Frother by DeLonghi, Black',
-                'image' => 'delongi.jpg',
-                'category_name' => 'household'
+                'name' => 'Iphone 12 Pro',
+                'price' => '109990',
+                'description' => ' The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max.',
+                'image' => 'iphone12pro.jpg',
+                'category_name' => 'smartphones'
+            ],
+            [
+                'name' => 'Air Pods Pro',
+                'price' => '22990',
+                'description' => 'Active Noise Cancellation for immersive sound.',
+                'image' => 'airpodspro.jpg',
+                'category_name' => 'wireless headphones'
+            ],
+            [
+                'name' => 'Iphone 12 mini',
+                'price' => '22990',
+                'description' => '5G speed. A14 Bionic, the fastest chip in a smartphone.An edge-to-edge OLED display.',
+                'image' => 'iphone12mini.jpg',
+                'category_name' => 'smartphones'
+            ],
+            [
+                'name' => 'Apple Watch SE',
+                'price' => '27990',
+                'description' => 'Apple Watch SE packs a large Retina display, advanced sensors for fitness, and powerful features for both health and safety.',
+                'image' => 'applewatchse.jpg',
+                'category_name' => 'smart watch'
+            ],
+            [
+                'name' => 'Apple Watch Series 6',
+                'price' => '40990',
+                'description' => 'With Apple Watch Series 6 on your wrist, a healthier, more active, more connected life is within reach.',
+                'image' => 'applewatch6.jpg',
+                'category_name' => 'smart watch'
+            ],
+            [
+                'name' => 'Apple Watch Series 3',
+                'price' => '22990',
+                'description' => 'The core fitness, heart-monitoring, and connectivity features that make Apple Watch the ultimate device for a healthy life.',
+                'image' => 'applewatch3.jpg',
+                'category_name' => 'smart watch'
             ]
         ]);
     }
 }
+

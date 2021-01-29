@@ -2,25 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27117e1d-3f82-40b5-b5f0-7a4e122c2d6f" name="Default Changelist" comment="not last commit">
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/CaviarDreams-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-BlackItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-BlackItalic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-BlackItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-BlackItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-UltraLight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OktaNeue-UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/airpodsmax.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/airpodspro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/applewatch3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/applewatch4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/applewatch5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/applewatch6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/applewatchnike.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/applewatchse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iphone-12-pro-max.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iphone11pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iphone12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iphone12mini.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iphone12pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/smartwatch.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Deletecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Deletecontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Mobilecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Mobilecontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Pagecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Pagecontroller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Rediscontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Rediscontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Categoriesseeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Categoriesseeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Userseeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Userseeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/starter-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/starter-template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/appliance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/beats.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bosch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/delongi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/gopro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/haier.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/htc_one_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/iphone_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mobile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/moulinex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/portable.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/portable.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/samsung_j6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/video_panasonic.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/card2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/card2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/card2.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +216,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/fonts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -194,6 +230,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SAMSUNG\Desktop\OpenServer\domains\shop.loc\public\fonts" />
       <recent name="C:\Users\SAMSUNG\Desktop\OpenServer\domains\shop.loc\public\js" />
     </key>
   </component>
@@ -208,6 +245,9 @@
       <command value="xdebug" />
       <command value=" Web Server Debug Validation" />
       <command value="artisan make:controller Deletecontroller" />
+      <command value="artisan db:seed --class=Userseeder" />
+      <command value="php artisan migrate:fresh --seed" />
+      <command value="artisan migrate:fresh --seed" />
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.Rediscontroller.php">
@@ -284,7 +324,18 @@
       <workItem from="1611068441145" duration="3313000" />
       <workItem from="1611081666194" duration="6079000" />
       <workItem from="1611145398902" duration="8174000" />
-      <workItem from="1611162375132" duration="16737000" />
+      <workItem from="1611162375132" duration="17073000" />
+      <workItem from="1611224663605" duration="25143000" />
+      <workItem from="1611435915838" duration="1258000" />
+      <workItem from="1611488390406" duration="2596000" />
+      <workItem from="1611494531635" duration="2719000" />
+      <workItem from="1611499346888" duration="9291000" />
+      <workItem from="1611509704600" duration="688000" />
+      <workItem from="1611522796679" duration="1145000" />
+      <workItem from="1611524985605" duration="2003000" />
+      <workItem from="1611568532264" duration="8434000" />
+      <workItem from="1611595208476" duration="1483000" />
+      <workItem from="1611921314702" duration="1946000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608639864659</created>
@@ -321,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611088591910</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="not last commit">
+      <created>1611184602032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611184602033</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +436,31 @@
     <MESSAGE value="Last commit" />
     <MESSAGE value="not last commit" />
     <option name="LAST_COMMIT_MESSAGE" value="not last commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/categories.blade.php</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/seeders/Userseeder.php</url>
+          <line>80</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/seeders/Userseeder.php</url>
+          <line>87</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/seeders/Userseeder.php</url>
+          <line>94</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -10,7 +10,7 @@ class Mobilecontroller extends Controller
     //
     public function index($code)
     {
-        $mobile = DB::table('products')->select('*')->where('code', '=', $code)->get();
+        $mobile = DB::table('products')->select('*')->where('category_name', '=', $code)->get();
         $port = Category::all();
         $data = ['mobile' => $mobile,'title'=>$port];
         return view('mobile', $data);

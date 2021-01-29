@@ -1,14 +1,12 @@
 $(document).ready(function () {
-    function bozelo() {
-        // jQuery.get('http://shop.loc/card')
-        // window.location.href = 'http://shop.loc/card'
-        $(".h3").load('http://shop.loc/card')
+    function reload() {
+        $("#body").load('http://shop.loc/card')
     }
     $(".del").bind("click", function () {
         let val = $(this).val();
         let name = $(this).attr('name')
         // alert(name)
-         alert(val)
+        //  alert(val)
         $.ajax({
             url: '/del',
             type: 'POST',
@@ -16,8 +14,18 @@ $(document).ready(function () {
             context: $(this),
             dataType: 'html',
             success: function () {
-                bozelo()
-                                // jQuery.get('card')
+                reload()
+                let value = $('#degenerad')
+                // setTimeout(function(){
+                    value.text(name +' removed from card')
+                // },  1.5 * 1000);
+                function hidemessage() {
+                    value.hide()
+                }
+                setTimeout(hidemessage,7 * 1000)
+
+
+                // jQuery.get('card')
             },
             error: function (data) {
                 console.log(data)
@@ -31,6 +39,8 @@ $(document).ready(function () {
         let val = $(this).val();
         let valtwo = $(this).attr('name')
         // alert(val)
+        let count = 0
+        // ++count
         $.ajax({
             url: '/card',
             type: 'POST',
@@ -42,13 +52,22 @@ $(document).ready(function () {
             context: $(this),
             dataType: 'html',
             success: function () {
-                console.log('yess')
+                if (count === 0){
+                    $("#down").text('Product added to card')
+                    console.log('yes')
+                    ++count
+                }else{
+                    $("#down").text('Product already on card')
+                }
             },
             error: function () {
-                console.log('nooo');
+                $("#down").text('Product already on card')
+                // console.log('nooo');
                 // alert(JSON.stringify(data));
             }
         });
+        // ++count
+        // $("#down").text('Product added to card')
         // alert('YOURE RIGHT');
     });
     $.ajaxSetup({

@@ -7,7 +7,7 @@
 
     <title>Online Shop</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+{{--    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">--}}
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
     {{--    <script src="/js/jquery.min.js"></script>--}}
@@ -21,20 +21,20 @@
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{route('index')}}">Интернет Магазин</a>
+            <a class="navbar-brand" href="{{route('index')}}">Online Shop</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li ><a href="{{route('index')}}">Все товары</a></li>
-                <li class="active"><a href="{{route('categories')}}">Категории</a>
+                <li class="active"><a href="{{route('categories')}}">Categories</a>
                 </li>
-                <li ><a href="http://internet-shop.tmweb.ru/basket">В корзину</a></li>
+                <li ><a href="http://internet-shop.tmweb.ru/basket">to Card</a></li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://internet-shop.tmweb.ru/login">Войти</a></li>
+{{--            <ul class="nav navbar-nav navbar-right">--}}
+{{--                <li><a href="http://internet-shop.tmweb.ru/login">Войти</a></li>--}}
 
-            </ul>
+{{--            </ul>--}}
         </div>
     </div>
 </nav>
@@ -48,7 +48,7 @@
 {{--        @endforeach--}}
         @foreach($mobile as $p => $product)
             @if($p === 0 or $p % 3 === 0)
-                <div class="row">
+                <div class="row" style="margin-bottom: 30px">
                     @endif
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
@@ -67,7 +67,7 @@
 {{--                                    </button>--}}
                                     <a href="{{route('product',['name'=>$product->name])}}"
                                        class="btn btn-default"
-                                       role="button">Подробнее</a>
+                                       role="button">more</a>
                                     <input type="hidden" name="_token" value="adj06plrzXmdR13dICCRLDfwwxGKJBDA1TkdkKOF">            </form>
                             </div>
                         </div>

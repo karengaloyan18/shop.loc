@@ -1,4 +1,19 @@
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('../fonts/OktaNeue-UltraLight.eot');
+    src: url('../fonts/OktaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OktaNeue-UltraLight.woff2') format('woff2'),
+    url('../fonts/OktaNeue-UltraLight.woff') format('woff'),
+    url('../fonts/OktaNeue-UltraLight.ttf') format('truetype'),
+    url('../fonts/OktaNeue-UltraLight.svg#OktaNeue-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
+    /*font-family: Apple ,"sans-serif", inherit;*/
     padding-top: 40px;
 }
 
@@ -45,9 +60,48 @@ span.badge.badge-danger {
 div.filters {
     padding-bottom: 5px;
 }
-#total_price{
+
+#total_price {
     place-self: flex-start;
     display: initial;
     flex-grow: 2;
     text-align: end;
+}
+
+#degenerad {
+    text-align: start;
+}
+
+h3,h1 {
+    font-family: "Okta Neue", "Arial", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-decoration: none;
+
+}
+p{
+    margin-bottom: 0;
+}
+a.btn, button.btn{
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+    color: #007bff;
+}
+#color{
+    color: black;
+}
+#color.btn.focus, #color.btn:focus{
+   color: #c82333;
+}
+#checkout{
+    color: #007bff;
+}
+#checkout.focus, #checkout:focus{
+    color: black;
 }

@@ -7,8 +7,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Online Shop</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
 
@@ -17,13 +15,12 @@
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{route('index')}}">Интернет Магазин</a>
+            <a class="navbar-brand" {{--href="{{route('index')}}"--}}>Online Shop</a>
         </div>
         <div id="navbar" class="nav-item navbar-expand">
             <ul class="nav nav-justified">
-                <li class="active"><a style="margin-left: 20px" href="{{route('index')}}">Все товары</a></li>
-                <li><a style="margin-left: 20px" href="{{route('categories')}}">Категории</a></li>
-                <li><a style="margin-left: 20px" href="{{route('card')}}">В корзину</a></li>
+                <li><a style="margin-left: 20px" href="{{route('categories')}}">Categories</a></li>
+                <li><a style="margin-left: 20px" href="{{route('card')}}">to Card</a></li>
             </ul>
         </div>
     </div>
@@ -31,56 +28,23 @@
 
 <div class="container">
     <div class="starter-template">
-        {{--        <h1>Все товары</h1>--}}
-        {{--        <form method="GET" action="http://internet-shop.tmweb.ru">--}}
-        {{--            <div class="filters row">--}}
-        {{--                <div class="col-sm-6 col-md-3">--}}
-        {{--                    <label for="price_from">Цена от--}}
-        {{--                        <input type="text" name="price_from" id="price_from" size="6" value="">--}}
-        {{--                    </label>--}}
-        {{--                    <label for="price_to">до--}}
-        {{--                        <input type="text" name="price_to" id="price_to" size="6" value="">--}}
-        {{--                    </label>--}}
-        {{--                </div>--}}
-        {{--                <div class="col-sm-2 col-md-2">--}}
-        {{--                    <label for="hit">--}}
-        {{--                        <input type="checkbox" name="hit" id="hit"> Хит</label>--}}
-        {{--                </div>--}}
-        {{--                <div class="col-sm-2 col-md-2">--}}
-        {{--                    <label for="new">--}}
-        {{--                        <input type="checkbox" name="new" id="new"> Новинка</label>--}}
-        {{--                </div>--}}
-        {{--                <div class="col-sm-2 col-md-2">--}}
-        {{--                    <label for="recommend">--}}
-        {{--                        <input type="checkbox" name="recommend" id="recommend">Рекомендуем</label>--}}
-        {{--                </div>--}}
-        {{--                <div class="col-sm-6 col-md-3">--}}
-        {{--                    <button type="submit" class="btn btn-primary">Фильтр</button>--}}
-        {{--                    <a href="http://internet-shop.tmweb.ru" class="btn btn-warning">Сброс</a>--}}
-        {{--                </div>--}}
-        {{--            </div>--}}
-        {{--        </form>--}}
         @foreach($products as $p => $product)
             @if($p === 0 or $p % 3 === 0)
-                <div class="row">
+                <div class="row" style="margin-bottom: 30px">
                     @endif
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
                             <div class="labels">
                             </div>
-                            <img src="{{asset('images') .'/'. $product->image}}" alt="iPhone X 64GB">
+                            <img src="{{asset('images') .'/'. $product->image}}" alt="">
                             <div class="caption">
                                 <h3>{{$product->name}}</h3>
                                 <p>{{$product->price}} ₽</p>
-                                    <input type="hidden" name="name" value="{{$product->name}}">
-                                    <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-{{--                                    <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">В--}}
-{{--                                        корзину--}}
-{{--                                    </button>--}}
-                                    @csrf
-
-                                    <a href="{{route('product',['name'=>$product->name])}}"
-                                       class="btn btn-default">Подробнее</a>
+                                <input type="hidden" name="name" value="{{$product->name}}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+                                @csrf
+                                <a href="{{route('product',['name'=>$product->name])}}"
+                                   class="btn btn-default">more</a>
                             </div>
                         </div>
                     </div>
@@ -88,18 +52,23 @@
                 </div>
             @endif
         @endforeach
-        <nav>
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="?&amp;page=1" rel="prev" aria-label="pagination.prev">&lsaquo;</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="?&amp;page=2" rel="next" aria-label="pagination.next">&rsaquo;</a>
-                </li>
-            </ul>
-        </nav>
+
     </div>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="?&amp;page=1" rel="prev" aria-label="pagination.prev">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?&amp;page=2" rel="next" aria-label="pagination.next">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?&amp;page=3" rel="next" aria-label="pagination.next">3</a>
+            </li>
+        </ul>
+    </nav>
 </div>
+
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <script src="{{asset('js/jquery.js')}}"></script>
 </body>

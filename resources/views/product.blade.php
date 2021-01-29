@@ -8,7 +8,6 @@
 
     <title>Online Shop: Product</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
 
@@ -17,13 +16,13 @@
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{route('index')}}">Интернет Магазин</a>
+            <a class="navbar-brand" href="{{route('index')}}">Online Shop</a>
         </div>
         <div id="navbar" class="nav-item navbar-expand">
             <ul class="nav nav-justified">
 {{--                <li class="active"><a style="margin-left: 20px" href="{{route('index')}}">Все товары</a></li>--}}
 {{--                <li><a style="margin-left: 20px" href="{{route('categories')}}">Категории</a></li>--}}
-                <li><a style="margin-left: 20px" href="{{route('card')}}">В корзину</a></li>
+                <li><a style="margin-left: 20px" href="{{route('card')}}">to Card</a></li>
             </ul>
         </div>
 {{--        <div id="navbar" class="collapse navbar-collapse">--}}
@@ -41,19 +40,19 @@
 {{--        </div>--}}
     </div>
 </nav>
-
 <div class="container">
+    <div class="text-danger" id="down"></div>
     <div class="starter-template">
         @foreach($products as $p=>$product)
             <h1>{{$product->name}}</h1>
-            <p>Цена: <b>{{$product->price}} ₽</b></p>
             <img style="width: 406px" src="{{asset('images') .'/'. $product->image}}" alt="">
             <p>{{$product->description}}</p>
 
 {{--            <form action="http://internet-shop.tmweb.ru/basket/add/2" method="POST">--}}
                 @csrf
             <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-                <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">В корзину</button>
+            <p>price: {{$product->price}} ₽</p>
+                <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">add to card</button>
                 <input type="hidden" name="_token" value="jvWIHcgayvP7IwJIhgrEUXMhBGwEVKVsiXq0La9Q">
 {{--            </form>--}}
         @endforeach

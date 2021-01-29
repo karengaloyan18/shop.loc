@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('OktaNeue-BlackItalic.eot');
+    src: url('OktaNeue-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('OktaNeue-BlackItalic.woff2') format('woff2'),
+        url('OktaNeue-BlackItalic.woff') format('woff'),
+        url('OktaNeue-BlackItalic.ttf') format('truetype'),
+        url('OktaNeue-BlackItalic.svg#OktaNeue-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('OktaNeue-UltraLight.eot');
+    src: url('OktaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('OktaNeue-UltraLight.woff2') format('woff2'),
+        url('OktaNeue-UltraLight.woff') format('woff'),
+        url('OktaNeue-UltraLight.ttf') format('truetype'),
+        url('OktaNeue-UltraLight.svg#OktaNeue-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
