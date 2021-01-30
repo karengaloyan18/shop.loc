@@ -53,7 +53,7 @@
                     {{$sec . ' ₽'}}<br>
                 @endforeach
                 @if($total !=0)
-                    <a href="#" style="font-size: 50px"
+                    <a href="{{route('checkout')}}" style="font-size: 50px"
                         id="checkout"><h3 >checkout</h3></a>
                 @endif
             </div>
