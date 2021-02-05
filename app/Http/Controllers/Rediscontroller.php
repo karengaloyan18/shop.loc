@@ -15,7 +15,6 @@ class Rediscontroller extends Controller
                 $res = $request->val;
                 echo $restwo = $request->valtwo;
                 $request->session()->put('product' . $res, $restwo);
-//            $request->session()->regenerateToken();
             } else {
 
                 return response('Hello World', 300)
@@ -23,8 +22,6 @@ class Rediscontroller extends Controller
 
             }
         } else {
-//            dd($request->session()->all());
-//            dd($request->session()->token());
             $request->session()->forget([/*'_token',*/ '_flash', '_previous']);
             $data = $request->session()->all();
             $one = [];
@@ -33,8 +30,6 @@ class Rediscontroller extends Controller
                 $one[] = $dat;
             }
 
-//
-//            dd($one);
             $product = [];
             foreach ($one as $on => $or) {
 

@@ -2,17 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 
 class Mobilecontroller extends Controller
 {
-    //
     public function index($code)
     {
-        $mobile = DB::table('products')->select('*')->where('category_name', '=', $code)->get();
-        $port = Category::all();
-        $data = ['mobile' => $mobile,'title'=>$port];
+        $products = DB::table('products')->select('*')->where('category_name', '=', $code)->paginate(6);
+        $data = ['products' => $products];
         return view('mobile', $data);
     }
 }

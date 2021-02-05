@@ -30,40 +30,20 @@
 
         <div class="col-4">
             <label for="name"></label>
-            <input id="name" type="text" name="name" value="{{old('name')}}" class="form-control inputstyle"
-                   placeholder="name">
-
-        </div>
-
-
-        <div class="col-4">
-            <label for="price"></label>
-            <input id="price" type="text" name="price" value="{{old('price')}}" class="form-control inputstyle"
-                   placeholder="price">
+            <input id="name" type="text" name="name" value="{{$categories['name']}}" class="form-control inputstyle">
 
         </div>
 
 
         <div class="col-8">
             <label for="description"></label>
-            <input id="description" type="text" name="description" value="{{old('description')}}"
-                   class="form-control inputstyle" placeholder="description">
+            <input id="description" type="text" name="description" value="{{$categories['description']}}" class="form-control inputstyle">
 
-        </div>
-
-
-        <div class="col-4">
-            <label for="exampleFormControlSelect1"></label>
-            <select name="category_name" class="selectstyle" id="exampleFormControlSelect1">
-                @foreach($yes as $ye => $y)
-                    <option>{{$y}}</option>
-                @endforeach
-            </select>
         </div>
 
         <div class="col-4">
             <label for="image"></label>
-            <input class="filestyle" name="image" type="file" id="image" value="" >
+            <input class="filestyle" name="image" type="file" id="image" value="">
         </div>
 
         <script>
@@ -98,4 +78,3 @@
 <script src="{{asset('js/bootstrap-filestyle-2.1.0/bootstrap-filestyle.min.js')}}"></script>
 </body>
 </html>
-

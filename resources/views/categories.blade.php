@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Online Shop</title>
+    <title>Categories</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
-    {{--    <script src="/js/jquery.min.js"></script>--}}
-    {{--    <script src="/js/bootstrap.min.js"></script>--}}
-    {{--    <link href="/css/bootstrap.min.css" rel="stylesheet">--}}
-    {{--    <link href="/css/starter-template.css" rel="stylesheet">--}}
-    {{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">--}}
-
 </head>
 <body>
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
@@ -26,13 +20,12 @@
     </div>
 </nav>
 <div class="container">
-    <div class="starter-template">
+    <div class="starter-template" style="display: flex;flex-wrap: wrap">
         @foreach($categories as $c => $category)
-            @if($c === 0 or $c % 3 === 0)
-                <div class="row" style="margin-bottom: 30px">
-                    @endif
+{{--            @if($c === 0 or $c % 3 === 0)--}}
+{{--                <div class="row" style="margin-bottom: 30px">--}}
+{{--                    @endif--}}
                     <div class="col-sm-6 col-md-4">
-                        {{--            <div class="col-sm-6 col-md-4">--}}
                         <div class="thumbnail">
                             <div class="labels">
                             </div>
@@ -45,12 +38,11 @@
                                 </h3>
                                 <p>{{$category->description}}</p>
                             </div>
-                            {{--                </div>--}}
                         </div>
                     </div>
-                    @if(($c+1) % 3 === 0 )
-                </div>
-            @endif
+{{--                    @if(($c+1) % 3 === 0 )--}}
+{{--                </div>--}}
+{{--            @endif--}}
         @endforeach
     </div>
 </div>

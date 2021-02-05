@@ -30,7 +30,7 @@
                     <div class="thumbnail">
                         <div class="labels">
                         </div>
-                        <img style="width: 200px;" src="{{asset('images/').'/'.$frs['image'] }}"
+                        <img {{--style="width: 200px;"--}} src="{{asset('images/').'/'.$frs['image'] }}"
                              alt="{{$frs['image']}}">
                         <div class="caption">
                             <h3>{{$frs['prod']}}</h3>

@@ -22,7 +22,6 @@
         </div>
     </div>
 </nav>
-
 <div class="container">
     <form action="{{--{{route('editproduct',['product'=>$product->id])}}--}}#" method="post"
           class="form-horizontal  formstyle" enctype="multipart/form-data">
@@ -48,15 +47,23 @@
 
         </div>
 
-
         <div class="col-4">
-            <label for="category_name"></label>
-            <input id="category_name" type="text" name="category_name" value="{{$products['category_name']}}" class="form-control inputstyle">
-
+            <label for="exampleFormControlSelect1"></label>
+            <select name="category_name" class="selectstyle" id="exampleFormControlSelect1">
+                @foreach($yes as $ye => $y)
+                    <option>{{$y}}</option>
+                @endforeach
+            </select>
         </div>
+{{--        <div class="col-4">--}}
+{{--            <label for="category_name"></label>--}}
+{{--            <input id="category_name" type="text" name="category_name" value="{{$products['category_name']}}" class="form-control inputstyle">--}}
 
-        <label for="image"></label>
+{{--        </div>--}}
+
+
         <div class="col-4">
+            <label for="image"></label>
             <input class="filestyle" name="image" type="file" id="image" value="">
         </div>
 
