@@ -32,11 +32,13 @@
             <h1>{{$product->name}}</h1>
             <img style="width: 406px" src="{{asset('images') .'/'. $product->image}}" alt="">
             <p>{{$product->description}}</p>
-                @csrf
+            @csrf
             <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-            <p style="font-weight: 400">price: {{$product->price}} ₽</p>
-                <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">add to card</button>
-                <input type="hidden" name="_token" value="jvWIHcgayvP7IwJIhgrEUXMhBGwEVKVsiXq0La9Q">
+            <p style="font-weight: 500">price: {{$product->price}} ₽</p>
+            <button type="button" class="btn btn-default button" value="{{$product->id}}" name="{{$product->name}}">add
+                to card
+            </button>
+            <input type="hidden" name="_token" value="jvWIHcgayvP7IwJIhgrEUXMhBGwEVKVsiXq0La9Q">
         @endforeach
     </div>
 </div>

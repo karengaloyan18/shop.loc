@@ -7,13 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
-    <title>{{$title}}</title>
+    <title>Category Add</title>
 </head>
 <body>
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            {{--            <a class="navbar-brand" href="{{route('index')}}">Online Shop</a>--}}
         </div>
         <div id="navbar" class="nav-item navbar-expand">
             <ul class="nav nav-justified">
@@ -31,14 +30,15 @@
         <div class="col-4">
             <label for="name"></label>
             <input id="name" type="text" name="name" value="{{old('name')}}" class="form-control inputstyle"
-            placeholder="name">
+                   placeholder="name">
 
         </div>
 
 
         <div class="col-8">
             <label for="description"></label>
-            <input id="description" type="text" name="description" value="{{old('description')}}" class="form-control inputstyle"
+            <input id="description" type="text" name="description" value="{{old('description')}}"
+                   class="form-control inputstyle"
                    placeholder="description">
 
         </div>
@@ -58,13 +58,13 @@
         </div>
 
         @if(count($errors) > 0)
-            {{--        <div>--}}
+
             <ul>
                 @foreach($errors->all() as $error)
                     <li id="font">{{$error}}</li>
                 @endforeach
             </ul>
-            {{--        </div>--}}
+
         @endif
         @if(session('status'))
             <div class="alert alert-success">

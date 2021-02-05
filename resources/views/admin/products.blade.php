@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
-    <title>{{$title}}</title>
+    <title>Products</title>
 </head>
 <body>
 <nav class="navbar navbar-fixed-top navbar-fixed-top">

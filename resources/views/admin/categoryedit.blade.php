@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
-    <title>{{$title}}</title>
+    <title>Category Edit</title>
 </head>
 <body>
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
@@ -37,7 +37,8 @@
 
         <div class="col-8">
             <label for="description"></label>
-            <input id="description" type="text" name="description" value="{{$categories['description']}}" class="form-control inputstyle">
+            <input id="description" type="text" name="description" value="{{$categories['description']}}"
+                   class="form-control inputstyle">
 
         </div>
 
@@ -55,13 +56,13 @@
         </div>
 
         @if(count($errors) > 0)
-            {{--        <div>--}}
+
             <ul>
                 @foreach($errors->all() as $error)
                     <li id="font">{{$error}}</li>
                 @endforeach
             </ul>
-            {{--        </div>--}}
+
         @endif
         @if(session('status'))
             <div class="alert alert-success">

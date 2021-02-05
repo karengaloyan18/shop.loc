@@ -15,7 +15,7 @@
 <nav class="navbar navbar-fixed-top navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" {{--href="{{route('index')}}"--}}>Online Shop</a>
+            <a class="navbar-brand">Online Shop</a>
         </div>
         <div id="navbar" class="nav-item navbar-expand">
             <ul class="nav nav-justified">
