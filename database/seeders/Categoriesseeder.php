@@ -16,9 +16,10 @@ class Categoriesseeder extends Seeder
     {
         //
         DB::table('categories')->insert([
-            ['name'=>'smartphones','description'=>'Mobile phones','image'=>'mobile.jpg'],
-            ['name'=>'wireless headphones','description'=>'Say it in a way only you can.','image'=>'portable.jpg'],
-            ['name'=>'smart watch','description'=>'Section with household appliances','image'=>'smartwatch.jpg']
+            ['name'=>'Iphone','description'=>'Mobile phones','image'=>'mobile.jpg'],
+            ['name'=>'Apple Watch','description'=>'The future of health is on your wrist.','image'=>'smartwatch.jpg'],
+            ['name'=>'Air Pods','description'=>'Say it in a way only you can.','image'=>'portable.jpg'],
+            ['name'=>'Ipad','description'=>'Powerful. Colorful. Wonderful.','image'=>'ipad.jpg']
         ]);
     }
 }

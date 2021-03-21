@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
+
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -46,12 +46,10 @@ class Producteditcontroller extends Controller
             $input['image'] = $file->getClientOriginalName();
             $file->move(public_path() . '/images', $input['image']);
 
-
             $product->fill($input);
             if ($product->save()) {
                 return redirect()->route('products')->with('status', $products['name'] . ' was updated');
             }
-//            dump($input);
             dd($input);
         }
         $data = ['title' => $products['name'] . ' updating', 'product' => $product, 'products' => $products,'yes'=>$yes];

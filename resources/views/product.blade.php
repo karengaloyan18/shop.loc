@@ -10,6 +10,7 @@
 
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
+    <link href="{{asset('images/icon.png')}}" rel="icon" type="image/x-icon">
 
 </head>
 <body>

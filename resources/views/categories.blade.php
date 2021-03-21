@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet">
+    <link href="{{asset('images/icon.png')}}" rel="icon" type="image/x-icon">
+
 </head>
 <body>
 <nav class="navbar navbar-fixed-top navbar-fixed-top">

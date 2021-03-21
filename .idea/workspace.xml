@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27117e1d-3f82-40b5-b5f0-7a4e122c2d6f" name="Default Changelist" comment="ever this not last commit">
+      <change afterPath="$PROJECT_DIR$/public/images/133866045-shopping-cart-icon-in-flat-style-trolley-vector-illustration-on-white-isolated-background-basket-bus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/832067877.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PHP Easy 1st step interview (1).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categoryadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categoryadd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categoryedit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categoryedit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/productadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/productadd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/productedit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/productedit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Producteditcontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Producteditcontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Categoriesseeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Categoriesseeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Userseeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Userseeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/card.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mobile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mobile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +180,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -204,7 +209,6 @@
       <command value="xdebug" />
       <command value=" Web Server Debug Validation" />
       <command value="artisan make:controller Deletecontroller" />
-      <command value="artisan db:seed --class=Userseeder" />
       <command value="php artisan migrate:fresh --seed" />
       <command value="artisan migrate:fresh --seed" />
       <command value="artisan make:controller Checkoutcontroller" />
@@ -228,6 +232,7 @@
       <command value="artisan make:controller Categoriesaddcontroller" />
       <command value="npm install tailwindcss" />
       <command value="artisan vendor:publish --tag=laravel-pagination" />
+      <command value="artisan db:seed --class=Userseeder" />
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.Rediscontroller.php">
@@ -347,7 +352,13 @@
       <workItem from="1612349886311" duration="13574000" />
       <workItem from="1612434788794" duration="6199000" />
       <workItem from="1612516772190" duration="13085000" />
-      <workItem from="1612553313808" duration="913000" />
+      <workItem from="1612553313808" duration="1146000" />
+      <workItem from="1613140946778" duration="78000" />
+      <workItem from="1614951211619" duration="701000" />
+      <workItem from="1616274264236" duration="1621000" />
+      <workItem from="1616276196091" duration="1687000" />
+      <workItem from="1616337071743" duration="405000" />
+      <workItem from="1616340294395" duration="3979000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608639864659</created>
@@ -419,7 +430,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612545449584</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ever this not last commit">
+      <created>1612554304217</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612554304217</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ever this not last commit">
+      <created>1612554472150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612554472150</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
